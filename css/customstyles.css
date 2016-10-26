@@ -727,14 +727,6 @@ ol.series li {
     display:block;
 }
 
-/* not sure if using this ...*/
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #248ec2 !important;
-}
-
-#mysidebar .nav ul {
-    background-color: #FAFAFA;
-}
 .nav ul.series li {
     list-style: decimal;
     font-size:12px;
@@ -760,11 +752,6 @@ a.dropdown-toggle.otherProgLangs {
 span.muted {color: #666;}
 
 table code {background-color: transparent;}
-
-.highlight .err {
-    color: #a61717;
-    background-color: transparent !important;
-}
 
 table p {
     margin-top: 12px;
