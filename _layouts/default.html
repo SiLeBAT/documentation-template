@@ -4,6 +4,7 @@
     {% include head.html %}
     <script>
         $(document).ready(function() {
+            /*global $*/
             // Initialize navgoco with default options
             $("#mysidebar").navgoco({
                 caretHtml: '',
@@ -34,8 +35,9 @@
         });
     </script>
     <script>
+        /*global $*/
         $(function() {
-            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 </head>
@@ -59,8 +61,6 @@
             </div>
             <!-- /.container -->
         </div>
-
 </body>
-{% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
 
 </html>

@@ -6,15 +6,9 @@ permalink: index.html
 summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
 ---
 
-## Images
+## Screenshot with Link
 
-<a href="https://github.com/SiLeBAT/BfROpenLabResources/raw/master/GitHubPages/documents/foodchainlab_datacollecting_1/12.png"><img class="aligncenter size-full" src="https://github.com/SiLeBAT/BfROpenLabResources/raw/master/GitHubPages/documents/foodchainlab_geocluster/1.png"/></a>
-
-![alt text](https://github.com/SiLeBAT/BfROpenLabResources/raw/master/GitHubPages/documents/foodchainlab_geocluster/1.png "Logo Title Text 1")
-
-## Links
-
-[Link](p2_sample3.html)
+{% include screenshot.html img="https://github.com/SiLeBAT/BfROpenLabResources/raw/master/GitHubPages/documents/foodchainlab_geocluster/1.png" %}
 
 ## Alerts
 
@@ -25,6 +19,10 @@ summary: These brief instructions will help you get started quickly with the the
 {% include callout.html content="This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. " type="primary" %}
 
 ## Markdown
+
+[Link](p2_sample3.html)
+
+!["Logo Title Text 1"](https://github.com/thoens/documentation-template/raw/master/images/company_logo.png)
 
 ```
 gem install bundler
