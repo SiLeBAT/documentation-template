@@ -1046,10 +1046,6 @@ ol li ul li ol li ul li{
     vertical-align: top;
 }
 
-table thead th code.highlighter-rouge {
-    background-color: transparent;
-}
-
 
 .box {
     padding: 10px;

@@ -35,19 +35,8 @@ If you've never installed or run a Jekyll site locally on your computer, follow 
 * Do this
 * Do that
 
-```java
-public static enum Provider {
-	MAPQUEST("MapQuest"), GISGRAPHY("Gisgraphy"), BKG("Bundesamt für Kartographie und Geodäsie");
-
-	private String name;
-
-	private Provider(String name) {
-		this.name = name;
-	}
-
-	@Override
-	public String toString() {
-		return name;
-	}
-}
-```
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
