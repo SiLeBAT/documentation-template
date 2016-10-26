@@ -1,7 +1,6 @@
 ---
 title: Getting started with the Documentation Theme for Jekyll
 keywords: sample homepage
-tags: [getting_started]
 sidebar: home_sidebar
 permalink: index.html
 summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
@@ -295,10 +294,8 @@ See the topics under "Formatting" in the sidebar for more information.
 
 ## Automated links
 
-If you want to use an automated system for managing links, see [Automated Links][mydoc_hyperlinks.html#automatedlinks]. This approach automatically creates a list of Markdown references to simplify linking.
+If you want to use an automated system for managing links, see [Automated Links](p2_sample3.html). This approach automatically creates a list of Markdown references to simplify linking.
 
 ## Other instructions
 
 The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.
-
-{% include links.html %}
