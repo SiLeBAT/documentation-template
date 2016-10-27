@@ -1,3 +1,5 @@
+/* general styles */
+
 html,
 body {
     height: 100%;
@@ -12,13 +14,19 @@ body {
     font-size: 15px;
 }
 
-div#toc ul li {
+.footer {
+    text-align: right;
+}
+
+/* table of contents styles */
+
+#toc ul li {
     margin: 8px 0px 8px 22px;
     font-size: 90%;
     list-style: square;
 }
 
-div#toc ul {
+#toc ul {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
@@ -26,15 +34,15 @@ div#toc ul {
     color: gray;
 }
 
-div#toc ul li ul {
+#toc ul li ul {
     padding-left: 8px;
 }
 
-div#toc ul li ul li::before {
+#toc ul li ul li::before {
     content: "–  ";
 }
 
-div#toc>ul::before {
+#toc>ul::before {
     content: "Table of Contents";
     font-weight: 500;
     color: #555;
@@ -47,20 +55,26 @@ div#toc>ul::before {
     padding-left: 10px;
 }
 
-li.dropdownActive a {
-    font-weight: bold;
-}
+/* topnavbar styles */
 
 .navbar-inverse .navbar-nav>li>a {
     background-color: transparent;
     margin-top: 10px;
 }
 
-footer {
-    font-size: smaller;
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    border-radius: 5px;
 }
 
-/* navgoco sidebar styles (customized) */
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+    border-radius: 5px;
+}
+
+/* navgoco sidebar styles */
 
 .nav,
 .nav ul,
@@ -169,138 +183,6 @@ ul#mysidebar {
 
 
 /* end sidebar */
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
-    border-radius: 5px;
-}
-
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:focus,
-.navbar-inverse .navbar-nav>.open>a:hover {
-    border-radius: 5px;
-}
-
-span.projectTitle {
-    font-family: Helvetica;
-    font-weight: bold;
-}
-
-.footer {
-    text-align: right;
-}
-
-.footerMeta {
-    background-color: whitesmoke;
-    padding: 10px;
-    max-width: 250px;
-    border-radius: 5px;
-    margin-top: 50px;
-    font-style: italic;
-    font-size: 12px;
-}
-
-img.screenshotSmall {
-    max-width: 300px;
-}
-
-dl dt p {
-    margin-left: 20px;
-}
-
-dl dd {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-dl.dl-horizontal dd {
-    padding-top: 20px;
-}
-
-figcaption {
-    padding-bottom: 12px;
-    padding-top: 6px;
-    max-width: 90%;
-    margin-bottom: 20px;
-    font-style: italic;
-    color: gray;
-}
-
-.testing {
-    color: orange;
-}
-
-.preference {
-    color: red;
-}
-
-table.dataTable thead {
-    background-color: #444;
-}
-
-table td {
-    hyphens: auto;
-}
-
-section table tr.success {
-    background-color: #dff0d8 !important;
-}
-
-table tr.info {
-    background-color: #d9edf7 !important;
-}
-
-section table tr.warning,
-table tr.testing,
-table tr.testing>td.sorting_1 {
-    background-color: #fcf8e3 !important;
-}
-
-section table tr.danger,
-table tr.preference,
-table tr.preference>td.sorting_1 {
-    background-color: #f2dede !important;
-}
-
-.orange {
-    color: orange;
-}
-
-table.profile thead tr th {
-    background-color: #248ec2;
-}
-
-table.request thead tr th {
-    background-color: #ED1951;
-}
-
-.audienceLabel {
-    margin: 10px;
-    float: right;
-    border: 1px solid #dedede;
-    padding: 7px;
-}
-
-.prefaceAudienceLabel {
-    color: gray;
-    text-align: center;
-    margin: 5px;
-}
-
-span.myLabel {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-button.cursorNorm {
-    cursor: default;
-}
-
-a.dropdown-toggle,
-.navbar-inverse .navbar-nav>li>a {
-    margin-left: 10px;
-}
 
 hr.faded {
     border: 0;
