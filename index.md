@@ -16,7 +16,6 @@ summary: These brief instructions will help you get started quickly with the the
 {% include warning.html content="Pay attention." %}
 {% include important.html content="This is important." %}
 {% include tip.html content="Try this." %}
-{% include callout.html content="This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. " type="primary" %}
 
 ## Markdown
 
