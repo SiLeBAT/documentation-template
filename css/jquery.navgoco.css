@@ -1,26 +1,26 @@
-.nav, .nav ul, .nav li {
+.navgoco, .navgoco ul, .navgoco li {
     list-style: none;
 }
 
-.nav ul {
+.navgoco ul {
     padding: 0;
     margin: 0 0 0 18px;
 }
 
-.nav {
+.navgoco {
     padding: 4px;
     margin: 0px;
 }
 
-.nav > li {
+.navgoco > li {
     margin: 4px 0;
 }
 
-.nav > li li {
+.navgoco > li li {
     margin: 2px 0;
 }
 
-.nav a {
+.navgoco a {
     color: #333;
     display: block;
     outline: none;
@@ -30,39 +30,39 @@
     text-decoration: none;
 }
 
-.nav li > a > span {
+.navgoco li > a > span {
     float: right;
     font-size: 19px;
     font-weight: bolder;
 }
 
-.nav li > a:hover > span {
+.navgoco li > a:hover > span {
     color: #fff;
 }
 
-.nav li > a > span:after {
+.navgoco li > a > span:after {
     content: '\25be';
 }
-.nav li.open > a > span:after {
+.navgoco li.open > a > span:after {
     content: '\25b4';
 }
 
-.nav a:hover, .nav li.active > a {
+.navgoco a:hover, .navgoco li.active > a {
     background-color: #5D5D5D;
     color: #f5f5f5;
 }
 
-.nav > li.active > a  {
+.navgoco > li.active > a  {
     background-color: #4D90FE;
 }
 
-.nav li a {
+.navgoco li a {
     font-size: 12px;
     line-height: 18px;
     padding: 2px 10px;
 }
 
-.nav > li > a {
+.navgoco > li > a {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 10px;
