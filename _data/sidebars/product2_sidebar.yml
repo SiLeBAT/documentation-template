@@ -11,7 +11,7 @@ entries:
     - title: Overview
       url: /p2_landing_page.html
 
-  - title: Simple Workflow
+  - title: Workflow
     folderitems:
     - title: Sample 1
       url: /p2_sample1.html
@@ -19,28 +19,4 @@ entries:
       url: /p2_sample2.html
     - title: Sample 3
       url: /p2_sample3.html
-    - title: Sample 4
-      url: /p2_sample4.html
-    - title: Sample 5
-      url: /p2_sample5.html
 
-  - title: Complex Workflow
-    folderitems:
-    - title: Sample 6
-      url: /p2_sample6.html
-    - title: Sample 7
-      url: /p2_sample7.html
-    - title: Sample 8
-      url: /p2_sample8.html
-    - title: Sample 9
-      url: /p2_sample9.html
-    - title: Sample 10
-      url: /p2_sample10.html
-    - title: Sample 11
-      url: /p2_sample11.html
-    - title: Sample 12
-      url: /p2_sample12.html
-    - title: Sample 13
-      url: /p2_sample13.html
-    - title: Sample 14
-      url: /p2_sample14.html

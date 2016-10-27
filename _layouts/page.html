@@ -6,18 +6,7 @@ layout: default
     <h1 class="post-title-main">{{ page.title }}</h1>
 </div>
 
-{% if page.simple_map == true %}
-
-<script>
-    /*global $*/
-    $(document).ready(function() {
-        $('.box{{page.box_number}}').addClass('active');
-    });
-</script>
-
-{% include custom/{{page.map_name}}.html %} 
-
-{% elsif page.complex_map == true %}
+{% if page.box_number %}
 
 <script>
     /*global $*/
