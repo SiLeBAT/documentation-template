@@ -2,8 +2,6 @@
 
 entries:
 - title: Sidebar
-  product: Product1
-  version: 1.0
   folders:
 
   - title: Getting Started
