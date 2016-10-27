@@ -28,7 +28,27 @@ hr.shaded {
     margin-bottom: 10px;
 }
 
+/* summary styles */
+
+.summary {
+    font-size: 120%;
+    color: #808080;
+    margin: 20px 0px 20px 0px;
+    border-left: 5px solid #ED1951;
+    padding-left: 10px;
+}
+
+.summary:before {
+    content: "Summary: ";
+    font-weight: bold;
+}
+
 /* table of contents styles */
+
+#toc ul li ul li {
+    list-style-type: none;
+    margin: 5px 0px 0px 0px;
+}
 
 #toc ul li {
     margin: 8px 0px 8px 22px;
@@ -191,259 +211,9 @@ ul#mysidebar {
     padding-left: 10px;
 }
 
-
-/* end sidebar */
-
-.fa-6x {
-    font-size: 900%;
-}
-
-.fa-7x {
-    font-size: 1100%;
-}
-
-.fa-8x {
-    font-size: 1300%;
-}
-
-.fa-9x {
-    font-size: 1500%;
-}
-
-.fa-10x {
-    font-size: 1700%;
-}
-
-i.border {
-    padding: 10px 20px;
-    background-color: whitesmoke;
-}
-
-a[data-toggle] {
-    color: #248EC2;
-}
-
-.summary {
-    font-size: 120%;
-    color: #808080;
-    margin: 20px 0px 20px 0px;
-    border-left: 5px solid #ED1951;
-    padding-left: 10px;
-}
-
-.summary:before {
-    content: "Summary: ";
-    font-weight: bold;
-}
-
-a.fa.fa-envelope-o.mailto {
-    font-weight: 600;
-}
-
-h3 {
-    color: #ED1951;
-    font-weight: normal;
-    font-size: 130%;
-}
-
-h4 {
-    color: #808080;
-    font-weight: normal;
-    font-size: 120%;
-    font-style: italic;
-}
-
-.alert,
-.callout {
-    overflow: hidden;
-}
-
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:hover,
-.nav-tabs>li.active>a:focus {
-    background-color: #248ec2;
-    color: white;
-}
-
-ol li ol li {
-    list-style-type: lower-alpha;
-}
-
-ol li ul li {
-    list-style-type: disc;
-}
-
-li img {
-    clear: both;
-}
-
-div#toc ul li ul li {
-    list-style-type: none;
-    margin: 5px 0px 0px 0px;
-}
-
-.tab-content {
-    padding: 15px;
-    background-color: #FAFAFA;
-}
-
-span.tagTitle {
-    font-weight: 500;
-}
-
-li.activeSeries {
-    font-weight: bold;
-}
-
-.seriesContext .dropdown-menu li.active {
-    font-weight: bold;
-    margin-left: 43px;
-    font-size: 18px;
-}
-
-.alert-warning {
-    color: #444;
-}
-
-div.alert code,
-h2 code {
-    background-color: transparent !important;
-}
-
+/* ----------------------------------------------------------------- */
 
 /* without this, the links in these notes aren't visible.*/
-
-.alert a {
-    text-decoration: underline;
-}
-
-div.tags {
-    padding: 10px 5px;
-}
-
-.tabLabel {
-    font-weight: normal;
-}
-
-hr {
-    border: 0;
-    border-bottom: 1px dashed #ccc;
-    background: #999;
-    margin: 30px 0px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-button.cursorNorm {
-    cursor: pointer;
-}
-
-h2 {
-    font-size: 24px;
-    line-height: 29px;
-}
-
-span.otherProgrammingLanguages {
-    font-style: normal;
-}
-
-a[data-toggle="tooltip"] {
-    color: #649345;
-    font-style: italic;
-    cursor: default;
-}
-
-.seriesNext,
-.seriesContext {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.seriescontext ol li {
-    list-style-type: upper-roman;
-}
-
-ol.series li {
-    list-style-type: decimal;
-    margin-left: 40px;
-    padding-left: 0px;
-}
-
-.siteTagline {
-    font-size: 200%;
-    font-weight: bold;
-    color: silver;
-    font-family: monospace;
-    text-align: center;
-    line-height: 10px;
-    margin: 20px 0px;
-    display: block;
-}
-
-.versionTagline {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: courier;
-    font-color: silver;
-    color: #444;
-    display: block;
-}
-
-.nav ul.series li {
-    list-style: decimal;
-    font-size: 12px;
-}
-
-.nav ul.series li a:hover {
-    background-color: gray;
-}
-
-.nav ul.series {
-    padding-left: 30px;
-}
-
-.nav ul.series {
-    background-color: #FAFAFA;
-}
-
-
-/*
-a.dropdown-toggle.otherProgLangs {
-    color: #f7e68f !important;
-}
-*/
-
-span.muted {
-    color: #666;
-}
-
-table code {
-    background-color: transparent;
-}
-
-table p {
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-pre,
-table code {
-    white-space: pre-wrap;
-    /* css-3 */
-    white-space: -moz-pre-wrap;
-    /* Mozilla, since 1999 */
-    white-space: -pre-wrap;
-    /* Opera 4-6 */
-    white-space: -o-pre-wrap;
-    /* Opera 7 */
-    word-wrap: break-word;
-    /* Internet Explorer 5.5+ */
-}
-
-pre {
-    margin: 25px 0px;
-}
 
 #json-box-container pre {
     margin: 0px;
