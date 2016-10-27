@@ -1,17 +1,8 @@
 /* general styles */
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     padding-top: 50px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-body {
-    font-size: 15px;
 }
 
 img {
@@ -46,6 +37,7 @@ img {
     content: "Summary: ";
     font-weight: bold;
 }
+
 
 /* table of contents styles */
 
@@ -88,6 +80,7 @@ img {
     padding-bottom: 20px;
 }
 
+
 /* topnavbar styles */
 
 .navbar-inverse .navbar-nav>li>a {
@@ -107,6 +100,7 @@ img {
     border-radius: 5px;
 }
 
+
 /* navgoco sidebar styles */
 
 .nav,
@@ -117,12 +111,10 @@ img {
 
 .nav ul {
     padding: 0;
-    /*margin: 0 0 0 18px;*/
     margin: 0px;
 }
 
 .nav {
-    /* padding: 4px;*/
     padding: 0px;
     margin: 0px;
 }
@@ -209,15 +201,10 @@ img {
     padding-left: 10px;
 }
 
+
 /* Responsive styles */
 
-@media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-        color: #444;
-    }
-}
-
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
     #mysidebar {
         position: relative;
     }
@@ -229,11 +216,6 @@ img {
     }
 }
 
-@media (max-width: 900px) {
-    #mysidebar {
-        max-width: 100%;
-    }
-}
 
 /* Workflow stuff */
 
