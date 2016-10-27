@@ -14,6 +14,10 @@ body {
     font-size: 15px;
 }
 
+img {
+    width: 100%
+}
+
 .footer {
     text-align: right;
 }
@@ -211,7 +215,7 @@ ul#mysidebar {
     padding-left: 10px;
 }
 
-/* ----------------------------------------------------------------- */
+/* Responsive styles */
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
@@ -236,6 +240,8 @@ ul#mysidebar {
         max-width: 100%;
     }
 }
+
+/* Workflow stuff */
 
 .box {
     padding: 10px;
@@ -305,10 +311,6 @@ div.content {
     margin-left: 0px;
 }
 
-button.btn.btn-default.btn-lg.modalButton1 {
-    margin-left: -20px;
-}
-
 div.box.box1 {
     margin-left: -20px;
 }
@@ -329,14 +331,6 @@ div.box.box1 {
 
 #userMap .btn-lg {
     white-space: pre-wrap;
-    /* css-3 */
-    white-space: -moz-pre-wrap;
-    /* Mozilla, since 1999 */
-    white-space: -pre-wrap;
-    /* Opera 4-6 */
-    white-space: -o-pre-wrap;
-    /* Opera 7 */
     word-wrap: break-word;
-    /* Internet Explorer 5.5+ */
     font-size: 14px;
 }
