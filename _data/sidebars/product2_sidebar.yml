@@ -5,6 +5,7 @@ entries:
   folders:
 
   - title: Introduction
+    url: /p2_landing_page.html
     folderitems:
     - title: Overview
       url: /p2_landing_page.html

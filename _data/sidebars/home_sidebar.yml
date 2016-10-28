@@ -5,6 +5,7 @@ entries:
   folders:
   
   - title: Introduction
+    url: /index.html
     folderitems:
     - title: Introduction
       url: /index.html
