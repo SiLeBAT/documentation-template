@@ -1,15 +1,15 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
-folders:
+items:
   
 - title: Introduction
   url: /index.html
-  folderitems:
+  subitems:
   - title: Introduction
     url: /index.html
 
 - title: Products
-  folderitems:
+  subitems:
   - title: Product 1
     url: /p1_landing_page.html
   - title: Product 2
