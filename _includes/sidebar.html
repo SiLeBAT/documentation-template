@@ -3,7 +3,14 @@
 <ul id="mysidebar" class="navgoco affix">
     {% for entry in sidebar %}
     {% for folder in entry.folders %}
-    <li>
+        {% if folder.external_url %}
+        <li><a href="{{folder.external_url}}" target="_blank">{{folder.title}}</a></li>
+        {% elsif page.url == folder.url %}
+        <li class="active"><a href="{{folder.url | remove: '/'}}">{{folder.title}}</a></li>
+        {% elsif folder.url %}
+        <li><a href="{{folder.url | remove: '/'}}">{{folder.title}}</a></li>
+        {% else %}
+        <li>
         <a href="#">{{ folder.title }}</a>
         <ul>
             {% for folderitem in folder.folderitems %} 
@@ -14,25 +21,10 @@
             {% else %}
             <li><a href="{{folderitem.url | remove: '/'}}">{{folderitem.title}}</a></li>
             {% endif %} 
-            {% for subfolders in folderitem.subfolders %}
-            <li class="subfolders">
-                <a href="#">{{ subfolders.title }}</a>
-                <ul>
-                    {% for subfolderitem in subfolders.subfolderitems %} 
-                    {% if subfolderitem.external_url %}
-                    <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
-                    {% elsif page.url == subfolderitem.url %}
-                    <li class="active"><a href="{{subfolderitem.url | remove: '/'}}">{{subfolderitem.title}}</a></li>
-                    {% else %}
-                    <li><a href="{{subfolderitem.url | remove: '/'}}">{{subfolderitem.title}}</a></li>
-                    {% endif %} 
-                    {% endfor %}
-                </ul>
-            </li>
-            {% endfor %} 
             {% endfor %}
         </ul>
-    </li>
+        </li>
+        {% endif %} 
     {% endfor %}
     {% endfor %}
 </ul>
