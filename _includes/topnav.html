@@ -9,8 +9,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-left">
-                {% for entry in site.data.topnav.topnav %}
-                {% for item in entry.items %} 
+                {% for item in site.data.topnav.items %} 
                 {% if item.external_url %}
                 <li><a href="{{item.external_url}}" target="_blank">{{item.title}}</a></li>
                 {% elsif page.folder == item.folder %}
@@ -18,7 +17,6 @@
                 {% else %}
                 <li><a href="{{item.url | remove: '/'}}">{{item.title}}</a></li>
                 {% endif %}
-                {% endfor %}
                 {% endfor %}
             </ul>
         </div>

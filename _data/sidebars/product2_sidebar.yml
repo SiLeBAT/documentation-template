@@ -1,21 +1,19 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
-entries:
-- title: Product2
-  folders:
+folders:
 
-  - title: Introduction
+- title: Introduction
+  url: /p2_landing_page.html
+  folderitems:
+  - title: Overview
     url: /p2_landing_page.html
-    folderitems:
-    - title: Overview
-      url: /p2_landing_page.html
 
-  - title: Workflow
-    folderitems:
-    - title: Sample 1
-      url: /p2_sample1.html
-    - title: Sample 2
-      url: /p2_sample2.html
-    - title: Sample 3
-      url: /p2_sample3.html
+- title: Workflow
+  folderitems:
+  - title: Sample 1
+    url: /p2_sample1.html
+  - title: Sample 2
+    url: /p2_sample2.html
+  - title: Sample 3
+    url: /p2_sample3.html
 
