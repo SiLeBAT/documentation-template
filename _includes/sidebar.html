@@ -1,5 +1,5 @@
-{% include custom/sidebarconfigs.html %}
-
+{% for sidebar in site.data.sidebar.entries %}
+{% if sidebar.name == page.sidebar %}
 <ul id="mysidebar" class="navgoco affix">
     {% for item in sidebar.items %}
         {% if item.external_url %}
@@ -23,9 +23,11 @@
             {% endfor %}
         </ul>
         </li>
-        {% endif %} 
+        {% endif %}
     {% endfor %}
 </ul>
+{% endif %}
+{% endfor %}
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>
