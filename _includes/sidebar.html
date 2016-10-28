@@ -1,36 +1,34 @@
 {% for sidebar in site.data.sidebar.entries %}
 {% if sidebar.name == page.sidebar %}
-<ul id="mysidebar" class="navgoco affix">
+    <ul id="mysidebar" class="navgoco affix">
     {% for item in sidebar.items %}
-        {% if item.external_url %}
-        <li><a href="{{item.external_url}}" target="_blank">{{item.title}}</a></li>
-        {% elsif page.url == item.url %}
-        <li class="active"><a href="{{item.url | remove: '/'}}">{{item.title}}</a></li>
-        {% elsif item.url %}
-        <li><a href="{{item.url | remove: '/'}}">{{item.title}}</a></li>
+        {% if item.url == page.url %}
+            {% assign active_item = item %}
+        {% endif %}
+        {% for subitem in item.subitems %}
+            {% if subitem.url == page.url %}
+                {% assign active_item = item %}
+                {% assign active_subitem = subitem %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    {% for item in sidebar.items %}
+        {% if item.url %}
+            {% if item == active_item %}<li class="active">{% else %}<li>{% endif %}
+            <a href="{{item.url | remove: '/'}}">{{item.title}}</a>
+            </li>
         {% else %}
-        <li>
-        <a href="#">{{ item.title }}</a>
-        <ul>
-            {% for subitem in item.subitems %} 
-            {% if subitem.external_url %}
-            <li><a href="{{subitem.external_url}}" target="_blank">{{subitem.title}}</a></li>
-            {% elsif page.url == subitem.url %}
-            <li class="active"><a href="{{subitem.url | remove: '/'}}">{{subitem.title}}</a></li>
-            {% else %}
-            <li><a href="{{subitem.url | remove: '/'}}">{{subitem.title}}</a></li>
-            {% endif %} 
+            {% if item == active_item %}<li class="active">{% else %}<li>{% endif %}
+            <a href="#">{{ item.title }}</a>
+            <ul>
+            {% for subitem in item.subitems %}
+                {% if subitem == active_subitem %}<li class="active">{% else %}<li>{% endif %} 
+                <a href="{{subitem.url | remove: '/'}}">{{subitem.title}}</a></li>
             {% endfor %}
-        </ul>
-        </li>
+            </ul>
+            </li>
         {% endif %}
     {% endfor %}
-</ul>
+    </ul>
 {% endif %}
 {% endfor %}
-
-<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
-<script>
-    /*global $*/
-    $("li.active").parents('li').toggleClass("active");
-</script>
