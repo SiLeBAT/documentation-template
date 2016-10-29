@@ -19,4 +19,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="{{ 'js/toc.js' }}"></script>
 
+<script>
+    $(document).ready(function() {
+        /*global $*/
+        $("#mysidebar").navgoco({
+            caretHtml: '',
+            accordion: true,
+            openClass: 'active',
+            save: false,
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 400,
+                easing: 'swing'
+            }
+        });
+    });
+</script>
+
 <link rel="shortcut icon" href="{{ " images/favicon.ico "  }}">

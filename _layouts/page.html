@@ -6,28 +6,15 @@ layout: default
     <h1 class="post-title-main">{{ page.title }}</h1>
 </div>
 
-{% if page.box_number %}
-
-<script>
-    /*global $*/
-    $(document).ready(function() {
-        $('.modalButton{{page.box_number}}').addClass('active');
-    });
-</script>
-
-{% include custom/{{page.map_name}}.html %} 
-
-{% endif %}
-
 <div class="post-content">
 
     {% if page.summary %}
     <div class="summary">{{page.summary}}</div>
     {% endif %} 
     
-    {% unless page.toc == false %} 
+    {% if page.toc != false %} 
     {% include toc.html %} 
-    {% endunless %} 
+    {% endif %} 
     
     {{content}}
 
