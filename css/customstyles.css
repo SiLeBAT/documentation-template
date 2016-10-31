@@ -8,6 +8,7 @@ img {
 
 footer {
     text-align: right;
+    margin-top: 70px;
 }
 
 i {
@@ -20,9 +21,9 @@ h3[id],
 h4[id],
 h5[id],
 h6[id],
-dt[id]{
-padding-top: 60px;
-margin-top: -40px
+dt[id] {
+    padding-top: 60px;
+    margin-top: -40px
 }
 
 .navbar-toggle {
@@ -41,21 +42,11 @@ margin-top: -40px
     color: #000;
 }
 
-#shaded {
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 6px 6px -6px rgba(0, 0, 0, 0.5);
-    margin-top: 70px;
-    background: white;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 #summary {
     font-size: 120%;
     color: #000;
     margin: 20px 0px 20px 0px;
-    border-left: 5px solid #ED1951;
+    border-left: 5px solid #f00;
     padding-left: 10px;
 }
 
@@ -64,43 +55,11 @@ margin-top: -40px
     font-weight: bold;
 }
 
-#markdown-toc li ul li {
-    list-style-type: none;
-    margin: 5px 0px 0px 0px;
-}
-
-#markdown-toc li {
-    margin: 8px 0px 8px 22px;
-    font-size: 90%;
-    list-style: square;
-}
-
 #markdown-toc {
     background-color: whitesmoke;
-    padding: 5px;
+    display: block;
+    padding: 10px 50px;
     border-radius: 5px;
-    max-width: 300px;
-    color: #000;
-}
-
-#markdown-toc li ul {
-    padding-left: 8px;
-}
-
-#markdown-toc li ul li::before {
-    content: "–  ";
-}
-
-#markdown-toc::before {
-    content: "Table of Contents";
-    font-weight: 500;
-    color: #555;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 #nav-panel-body {
