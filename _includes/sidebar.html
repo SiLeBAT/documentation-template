@@ -21,8 +21,8 @@
             </li>
         {% else %}
             <li>
-            <a href="#" data-toggle="collapse" data-target="#toggleDemo">{{ item.title }}</a>
-            {% if item == active_item %}<div class="collapse in" id="toggleDemo">{% else %}<div class="collapse" id="toggleDemo">{% endif %}
+            <a href="#" data-toggle="collapse" data-target="{{ '#' | append: item.id }}">{{ item.title }}</a>
+            {% if item == active_item %}<div class="collapse in" id="{{ item.id }}">{% else %}<div class="collapse" id="{{ item.id }}">{% endif %}
             <ul class="nav nav-list">
             {% for subitem in item.subitems %}
                 {% if subitem == active_subitem %}<li class="active">{% else %}<li>{% endif %} 
