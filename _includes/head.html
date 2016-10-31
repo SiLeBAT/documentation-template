@@ -8,36 +8,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="{{ 'css/customstyles.css' }}">
-<link rel="stylesheet" href="{{ 'css/jquery.navgoco.css' }}">
 <link rel="stylesheet" href="{{ 'css/material.css' }}">
 <link rel="stylesheet" href="{{ 'css/syntax.css' }}">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="{{ 'js/jquery.navgoco.js' }}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="{{ 'js/toc.js' }}"></script>
 
-<script>
-    $(document).ready(function() {
-        /*global $*/
-        $("#mysidebar").navgoco({
-            caretHtml: '',
-            accordion: true,
-            openClass: 'active',
-            save: false,
-            cookie: {
-                name: 'navgoco',
-                expires: false,
-                path: '/'
-            },
-            slide: {
-                duration: 400,
-                easing: 'swing'
-            }
-        });
-    });
-</script>
-
-<link rel="shortcut icon" href="{{ " images/favicon.ico "  }}">
+<link rel="shortcut icon" href="{{ 'images/favicon.ico' }}">
