@@ -1,6 +1,7 @@
 ---
 title: Sample 7 Topic (Product 1)
 summary: "This is just a sample topic..."
+keywords: sample, topic
 sidebar: product1_sidebar
 permalink: p1_sample7.html
 folder: product1
