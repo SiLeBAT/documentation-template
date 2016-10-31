@@ -12,7 +12,9 @@
         {% endfor %}
     {% endfor %}
     <div class="panel-group" id="accordion">
-    {% for item in sidebar.items %}
+    {% for id in (1..sidebar.items.size) %}
+        {% assign i = id | minus: 1 %}
+        {% assign item = sidebar.items[i] %}
         <div class="panel panel-default">
         {% if item.url %}
             <div id="nav-panel-heading" class="panel-heading {% if item == active_item %}active{% endif %}">
@@ -20,14 +22,13 @@
             <a href="{{item.url | remove: '/'}}">{{item.title}}</a>
             </h4>
             </div>
-            {% if item == active_item %}{% else %}{% endif %}
         {% else %}
             <div id="nav-panel-heading" class="panel-heading">
             <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="{{ '#' | append: item.id }}">{{ item.title }}</a>
+            <a data-toggle="collapse" data-parent="#accordion" href="{{ '#' | append: id }}">{{ item.title }}</a>
             </h4>
             </div>
-            <div id="{{ item.id }}" class="panel-collapse collapse {% if item == active_item %}in{% endif %}">
+            <div id="{{ id }}" class="panel-collapse collapse {% if item == active_item %}in{% endif %}">
             <div id="nav-panel-body" class="panel-body">
             <table class="table">
             {% for subitem in item.subitems %}

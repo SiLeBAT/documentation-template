@@ -2,11 +2,9 @@ entries:
 
 - name: home_sidebar
   items:
-  - id: 1
-    title: Introduction
+  - title: Introduction
     url: /index.html
-  - id: 2
-    title: Products
+  - title: Products
     subitems:
     - title: Product 1
       url: /p1_landing_page.html
@@ -15,8 +13,7 @@ entries:
       
 - name: product1_sidebar
   items:
-  - id: 1
-    title: Getting Started
+  - title: Getting Started
     subitems:
     - title: Product 1 home
       url: /p1_landing_page.html
@@ -26,8 +23,7 @@ entries:
       url: /p1_sample2.html
     - title: Sample 3
       url: /p1_sample3.html
-  - id: 2
-    title: Another heading
+  - title: Another heading
     subitems:
     - title: Sample 4
       url: /p1_sample4.html
@@ -40,11 +36,9 @@ entries:
       
 - name: product2_sidebar
   items:
-  - id: 1
-    title: Introduction
+  - title: Introduction
     url: /p2_landing_page.html
-  - id: 2
-    title: Workflow
+  - title: Workflow
     subitems:
     - title: Sample 1
       url: /p2_sample1.html
