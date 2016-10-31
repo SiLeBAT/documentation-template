@@ -1,8 +1,5 @@
 {% for sidebar in site.data.sidebar.entries %}
 {% if sidebar.name == page.sidebar %}
-    <div class="sidebar-nav">
-    <div class="navbar navbar-default" role="navigation">
-    <ul class="nav navbar-nav">
     {% for item in sidebar.items %}
         {% if item.url == page.url %}
             {% assign active_item = item %}
@@ -14,27 +11,37 @@
             {% endif %}
         {% endfor %}
     {% endfor %}
+    <div class="panel-group" id="accordion">
     {% for item in sidebar.items %}
+        <div class="panel panel-default">
         {% if item.url %}
-            {% if item == active_item %}<li class="active">{% else %}<li>{% endif %}
+            <div class="panel-heading">
+            <h4 class="panel-title">
             <a href="{{item.url | remove: '/'}}">{{item.title}}</a>
-            </li>
-        {% else %}
-            <li>
-            <a href="#" data-toggle="collapse" data-target="{{ '#' | append: item.id }}">{{ item.title }}</a>
-            {% if item == active_item %}<div class="collapse in" id="{{ item.id }}">{% else %}<div class="collapse" id="{{ item.id }}">{% endif %}
-            <ul class="nav nav-list">
-            {% for subitem in item.subitems %}
-                {% if subitem == active_subitem %}<li class="active">{% else %}<li>{% endif %} 
-                <a href="{{subitem.url | remove: '/'}}">{{subitem.title}}</a></li>
-            {% endfor %}
-            </ul>
+            </h4>
             </div>
-            </li>
+            {% if item == active_item %}{% else %}{% endif %}
+        {% else %}
+            <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="{{ '#' | append: item.id }}">{{ item.title }}</a>
+            </h4>
+            </div>
+            <div id="{{ item.id }}" class="panel-collapse collapse {% if item == active_item %}in{% endif %}">
+            <div class="panel-body">
+            <table class="table">
+            {% for subitem in item.subitems %}
+                <tr><td>
+                {% if subitem == active_subitem %}{% else %}{% endif %}
+                <a href="{{subitem.url | remove: '/'}}">{{subitem.title}}</a>
+                </td></tr>
+            {% endfor %}
+            </table>
+            </div>
+            </div>
         {% endif %}
+        </div>
     {% endfor %}
-    </ul>
-    </div>
     </div>
 {% endif %}
 {% endfor %}
