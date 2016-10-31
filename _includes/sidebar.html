@@ -1,6 +1,8 @@
 {% for sidebar in site.data.sidebar.entries %}
 {% if sidebar.name == page.sidebar %}
-    <ul id="mysidebar" class="navgoco affix">
+    <div class="sidebar-nav">
+    <div class="navbar navbar-default" role="navigation">
+    <ul class="nav navbar-nav">
     {% for item in sidebar.items %}
         {% if item.url == page.url %}
             {% assign active_item = item %}
@@ -18,17 +20,22 @@
             <a href="{{item.url | remove: '/'}}">{{item.title}}</a>
             </li>
         {% else %}
-            {% if item == active_item %}<li class="active">{% else %}<li>{% endif %}
-            <a href="#">{{ item.title }}</a>
-            <ul>
+            <li>
+            <a href="#" data-toggle="collapse" data-target="#toggleDemo">{{ item.title }}</a>
+            {% if item == active_item %}<div class="collapse in" id="toggleDemo">{% else %}<div class="collapse" id="toggleDemo">{% endif %}
+            <ul class="nav nav-list">
             {% for subitem in item.subitems %}
                 {% if subitem == active_subitem %}<li class="active">{% else %}<li>{% endif %} 
                 <a href="{{subitem.url | remove: '/'}}">{{subitem.title}}</a></li>
             {% endfor %}
             </ul>
+            </div>
             </li>
         {% endif %}
     {% endfor %}
     </ul>
+    </div>
+    </div>
 {% endif %}
 {% endfor %}
+

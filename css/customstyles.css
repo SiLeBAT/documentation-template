@@ -8,10 +8,6 @@ img {
     max-width: 100%
 }
 
-.navbar {
-    font-size: 48;
-}
-
 .footer {
     text-align: right;
 }
@@ -25,6 +21,7 @@ img {
     width: 100%;
     margin-bottom: 10px;
 }
+
 
 /* summary styles */
 
@@ -83,16 +80,25 @@ img {
     padding-bottom: 20px;
 }
 
-/* responsive styles */
+/* make sidebar nav vertical */
 
-@media (max-width: 1000px) {
-    #mysidebar {
-        position: relative;
-    }
+.sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
 }
 
-@media (min-width: 1000px) {
-    #mysidebar {
-        width: 225px;
-    }
+.sidebar-nav .navbar ul {
+    margin: 0px 0px;
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar li {
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
