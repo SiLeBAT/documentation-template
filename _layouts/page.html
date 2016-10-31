@@ -9,7 +9,7 @@ layout: default
 <div class="post-content">
 
     {% if page.summary %}
-    <div class="summary">{{page.summary}}</div>
+    <div id="summary">{{page.summary}}</div>
     {% endif %} 
     
     {% if page.toc != false %} 
@@ -20,5 +20,5 @@ layout: default
 
 </div>
 
-<hr class="shaded"/>
+<hr id="shaded"/>
 {% include footer.html %}
