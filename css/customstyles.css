@@ -10,6 +10,18 @@ footer {
     text-align: right;
 }
 
+.navbar-default .navbar-brand {
+    color: #000;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #000;
+}
+
 #shaded {
     height: 12px;
     border: 0;
@@ -22,7 +34,7 @@ footer {
 
 #summary {
     font-size: 120%;
-    color: #808080;
+    color: #000;
     margin: 20px 0px 20px 0px;
     border-left: 5px solid #ED1951;
     padding-left: 10px;
@@ -49,7 +61,7 @@ footer {
     padding: 5px;
     border-radius: 5px;
     max-width: 300px;
-    color: gray;
+    color: #000;
 }
 
 #toc ul li ul {
