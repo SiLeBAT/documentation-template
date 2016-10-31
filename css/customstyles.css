@@ -10,6 +10,14 @@ footer {
     text-align: right;
 }
 
+i {
+    vertical-align: middle;
+}
+
+.navbar-toggle {
+    padding: 6px 8px;
+}
+
 .navbar-default .navbar-brand {
     color: #000;
 }
