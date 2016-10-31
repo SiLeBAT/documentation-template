@@ -14,6 +14,17 @@ i {
     vertical-align: middle;
 }
 
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id],
+dt[id]{
+padding-top: 60px;
+margin-top: -40px
+}
+
 .navbar-toggle {
     padding: 6px 8px;
 }
@@ -53,18 +64,18 @@ i {
     font-weight: bold;
 }
 
-#toc ul li ul li {
+#markdown-toc li ul li {
     list-style-type: none;
     margin: 5px 0px 0px 0px;
 }
 
-#toc ul li {
+#markdown-toc li {
     margin: 8px 0px 8px 22px;
     font-size: 90%;
     list-style: square;
 }
 
-#toc ul {
+#markdown-toc {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
@@ -72,15 +83,15 @@ i {
     color: #000;
 }
 
-#toc ul li ul {
+#markdown-toc li ul {
     padding-left: 8px;
 }
 
-#toc ul li ul li::before {
+#markdown-toc li ul li::before {
     content: "–  ";
 }
 
-#toc>ul::before {
+#markdown-toc::before {
     content: "Table of Contents";
     font-weight: 500;
     color: #555;
