@@ -58,9 +58,11 @@ dt[id] {
 }
 
 #markdown-toc {
+    font-size: 120%;
+    font-weight: bold;
     background-color: $gray-background;
     display: block;
-    padding: 10px 50px;
+    padding: 10px 40px;
     border-radius: 5px;
 }
 
