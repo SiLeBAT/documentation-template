@@ -35,8 +35,10 @@ If you've never installed or run a Jekyll site locally on your computer, follow 
 * Do this
 * Do that
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
+{% highlight java %}
+public class HalloWelt {
+    public static void main(String[] args) {
+        System.out.println("Hallo Welt!");
+    }
+ }
 {% endhighlight %}
