@@ -11,7 +11,7 @@
             {% endif %}
         {% endfor %}
     {% endfor %}
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="sidebar">
     {% for id in (1..sidebar.items.size) %}
         {% assign i = id | minus: 1 %}
         {% assign item = sidebar.items[i] %}
@@ -25,7 +25,7 @@
         {% else %}
             <div class="panel-heading">
             <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="{{ '#' | append: id }}">{{ item.title }}</a>
+            <a data-toggle="collapse" data-parent="#sidebar" href="{{ '#' | append: id }}">{{ item.title }}</a>
             </h4>
             </div>
             <div id="{{ id }}" class="panel-collapse collapse {% if item == active_item %}in{% endif %}">

@@ -66,6 +66,13 @@ dt[id] {
     border-radius: 5px;
 }
 
+@media (min-width: 992px) {
+    #sidebar {
+        position: fixed;
+        width: 225px;
+    }    
+}
+
 #nav-panel {
     .panel-heading {
         padding: 0px;
