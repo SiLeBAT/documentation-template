@@ -20,7 +20,7 @@ folder: home
 
 ## Markdown
 
-[Link](p2_sample3.html)
+[Link](/p2_sample3.html)
 
 !["Logo Title Text 1"](https://github.com/thoens/documentation-template/raw/master/images/company_logo.png)
 

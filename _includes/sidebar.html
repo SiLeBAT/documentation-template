@@ -19,7 +19,7 @@
         {% if item.url %}
             <div id="nav-panel-heading" class="panel-heading {% if item == active_item %}active{% endif %}">
             <h4 class="panel-title">
-            <a href="{{item.url | remove: '/'}}">{{item.title}}</a>
+            <a href="{{ item.url }}">{{item.title}}</a>
             </h4>
             </div>
         {% else %}
@@ -33,7 +33,7 @@
             <table class="table">
             {% for subitem in item.subitems %}
                 <tr><td {% if subitem == active_subitem %}class="active"{% endif %}>
-                <a href="{{subitem.url | remove: '/'}}">{{subitem.title}}</a>
+                <a href="{{ subitem.url }}">{{subitem.title}}</a>
                 </td></tr>
             {% endfor %}
             </table>
