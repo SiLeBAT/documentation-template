@@ -1,11 +1,11 @@
 {% for sidebar in site.data.sidebar.entries %}
 {% if sidebar.name == page.sidebar %}
     {% for item in sidebar.items %}
-        {% if item.url == page.url %}
+        {% if page.url contains item.url %}
             {% assign active_item = item %}
         {% endif %}
         {% for subitem in item.subitems %}
-            {% if subitem.url == page.url %}
+            {% if page.url contains subitem.url %}
                 {% assign active_item = item %}
                 {% assign active_subitem = subitem %}
             {% endif %}
