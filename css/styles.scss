@@ -17,10 +17,6 @@ footer {
     margin-top: 70px;
 }
 
-i {
-    vertical-align: middle;
-}
-
 h1[id],
 h2[id],
 h3[id],
@@ -34,6 +30,10 @@ dt[id] {
 
 .navbar-toggle {
     padding: 6px 8px;
+}
+
+.material-icons {
+    vertical-align: middle;
 }
 
 .material-icons.md-18 {
