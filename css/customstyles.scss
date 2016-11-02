@@ -3,11 +3,6 @@
 
 @import "bootstrap";
 
-$text-color-dark: #000;
-$text-color-light: #fff;
-$gray-background: #f5f5f5;
-$blue-background: #337ab7;
-
 body {
     padding-top: 75px;
 }
@@ -40,17 +35,10 @@ dt[id] {
     padding: 6px 8px;
 }
 
-.navbar-default {
-    .navbar-brand, .navbar-nav li a {
-        color: $text-color-dark !important;
-    }
-}
-
 #summary {
-    font-size: 120%;
-    color: $text-color-dark;
+    font-size: $font-size-large;
     margin: 20px 0px 20px 0px;
-    border-left: 5px solid #f00;
+    border-left: 5px solid $brand-primary;
     padding-left: 10px;
     
     :before {
@@ -60,12 +48,11 @@ dt[id] {
 }
 
 #markdown-toc {
-    font-size: 120%;
-    font-weight: bold;
-    background-color: $gray-background;
-    display: block;
+    font-size: $font-size-large;
+    background-color: $well-bg;
+    border: 1px solid $well-border;
     padding: 10px 40px;
-    border-radius: 5px;
+    border-radius: $border-radius-base;
 }
 
 @media (min-width: $screen-md-min) {
@@ -80,17 +67,16 @@ dt[id] {
         padding: 0px;
         
         a {
-            color: $text-color-dark;
             display: block;
             padding: 10px 15px;
         }
     }
     
     .panel-heading.active {
-        background-color: $blue-background;
+        background-color: $component-active-bg;
         
         a {
-            color: $text-color-light;
+            color: $component-active-color;
         }
     }
     
@@ -105,17 +91,16 @@ dt[id] {
             padding: 0px;
             
             a {
-                color: $text-color-dark;
                 display: block;
                 padding: 8px 15px;
             }
         }
         
         td.active {
-            background-color: $blue-background;
+            background-color: $component-active-bg;
             
             a {
-                color: $text-color-light;
+                color: $component-active-color;
             }
         }
     }

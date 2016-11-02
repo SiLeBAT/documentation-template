@@ -13,10 +13,10 @@ folder: home
 
 ## Alerts
 
-{% include note.html content="This is interesting." %}
-{% include warning.html content="Pay attention." %}
-{% include important.html content="This is important." %}
-{% include tip.html content="Try this." %}
+{% include success.html title="Well done" content="You successfully read this important alert message." %}
+{% include info.html title="Heads up" content="This alert needs your attention, but it's not super important." %}
+{% include warning.html title="Warning" content="Better check yourself, you're not looking too good." %}
+{% include danger.html title="Oh snap!" content="Change a few things up and try submitting again." %}
 
 ## Markdown
 
