@@ -57,11 +57,6 @@ dt[id] {
     margin: 20px 0px 20px 0px;
     border-left: 5px solid $brand-primary;
     padding-left: 10px;
-    
-    :before {
-        content: "Summary: ";
-        font-weight: bold;
-    }
 }
 
 #markdown-toc {
@@ -85,7 +80,7 @@ dt[id] {
         
         a {
             display: block;
-            padding: 10px 15px;
+            padding: $padding-large-vertical $padding-large-horizontal;
         }
     }
     
@@ -109,7 +104,7 @@ dt[id] {
             
             a {
                 display: block;
-                padding: 8px 15px;
+                padding: $padding-large-vertical $padding-large-horizontal;
             }
         }
         
