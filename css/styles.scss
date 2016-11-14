@@ -71,49 +71,22 @@ dt[id] {
     #sidebar {
         position: fixed;
         width: 225px;
-    }    
+    }
 }
 
 #nav-panel {
     .panel-heading {
         padding: 0px;
-        
         a {
             display: block;
-            padding: $padding-large-vertical $padding-large-horizontal;
+            padding: $panel-heading-padding;
         }
     }
     
     .panel-heading.active {
         background-color: $component-active-bg;
-        
         a {
             color: $component-active-color;
-        }
-    }
-    
-    .panel-body {
-        padding: 0px;
-        
-        table {
-            margin-bottom: 0px;
-        }
-        
-        td {
-            padding: 0px;
-            
-            a {
-                display: block;
-                padding: $padding-large-vertical $padding-large-horizontal;
-            }
-        }
-        
-        td.active {
-            background-color: $component-active-bg;
-            
-            a {
-                color: $component-active-color;
-            }
         }
     }
 }
