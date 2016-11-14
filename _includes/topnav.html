@@ -1,12 +1,12 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container topnavlinks">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <i class="material-icons md-18">menu</i>
             </button>
             <a class="navbar-brand" href="index.html"><i class="material-icons md-18">home</i> {{site.data.topnav.title}}</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav navbar-left">
                 {% for item in site.data.topnav.items %}
                 <li class="{% if page.folder == item.folder %}active{% endif %}">
@@ -16,4 +16,4 @@
             </ul>
         </div>
     </div>
-</nav>
+</div>
