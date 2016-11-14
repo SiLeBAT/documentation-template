@@ -15,7 +15,7 @@
     {% for id in (1..sidebar.items.size) %}
         {% assign i = id | minus: 1 %}
         {% assign item = sidebar.items[i] %}
-        <div id="nav-panel" class="panel panel-default">
+        <div class="panel panel-default">
         {% if item.url %}
             <div class="panel-heading {% if item == active_item %}active{% endif %}">
             <h4 class="panel-title">
