@@ -4,13 +4,13 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <i class="material-icons md-18">menu</i>
             </button>
-            <a class="navbar-brand" href="index.html"><i class="material-icons md-18">home</i> {{site.data.topnav.title}}</a>
+            <a class="navbar-brand" href="index.html"><i class="material-icons md-18">home</i> {{ site.data.topnav.title }}</a>
         </div>
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav navbar-left">
                 {% for item in site.data.topnav.items %}
-                <li class="{% if page.folder == item.folder %}active{% endif %}">
-                    <a href="{{ item.url }}">{{item.title}}</a>
+                <li {% if page.folder == item.folder %}class="active"{% endif %}>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
                 </li>
                 {% endfor %}
             </ul>

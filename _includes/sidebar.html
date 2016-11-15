@@ -17,9 +17,9 @@
         {% assign item = sidebar.items[i] %}
         <div class="panel panel-default">
         {% if item.url %}
-            <div class="panel-heading {% if item == active_item %}active{% endif %}">
+            <div class="panel-heading{% if item == active_item %} active{% endif %}">
             <h4 class="panel-title">
-            <a href="{{ item.url }}">{{item.title}}</a>
+            <a href="{{ item.url }}">{{ item.title }}</a>
             </h4>
             </div>
         {% else %}
@@ -29,9 +29,9 @@
             </h4>
             </div>
             <div id="{{ id }}" class="panel-collapse collapse {% if item == active_item %}in{% endif %}">
-            <div class="list-group table-of-contents">
+            <div class="list-group">
             {% for subitem in item.subitems %}
-                <a class="list-group-item {% if subitem == active_subitem %}active{% endif %}" href="{{ subitem.url }}">{{subitem.title}}</a>
+                <a class="list-group-item{% if subitem == active_subitem %} active{% endif %}" href="{{ subitem.url }}">{{ subitem.title }}</a>
             {% endfor %}
             </div>
             </div>
@@ -41,4 +41,3 @@
     </div>
 {% endif %}
 {% endfor %}
-
